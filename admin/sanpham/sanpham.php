@@ -40,7 +40,7 @@ include_once('../model/database.php');
 				<td><?php echo $row['MaNCC']; ?></td>
 				<td><?php echo $row['SoLuong']; ?></td>
 				<td><a href="#" title="<?php echo $row['MoTa']; ?>"><?php echo '---' ?></a></td>
-				<td><?php echo number_format($row['DonGia']).'đ'; ?></td>
+				<td><?php echo number_format((float)$row['DonGia']).'đ'; ?></td>
 				<td><a href="index.php?action=sanpham&view=suasp&masp=<?php echo $row['MaSP']; ?>" ><i class="far fa-edit"></i></a></td>
 				<td><a href="sanpham/main.php?view=xoasp&masp=<?php echo $row['MaSP']; ?>" ><i class="fas fa-backspace"></i></a></td>
 			</tr>
